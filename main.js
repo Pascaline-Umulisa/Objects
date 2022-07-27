@@ -9,8 +9,6 @@ function calculateFruitCost(fruit,quantity){
 }
 calculateFruitCost("orange",2)
 
-
-
 class KioskCalc{
     constructor(name,quantity){
         this.name=name
