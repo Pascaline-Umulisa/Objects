@@ -20,6 +20,19 @@ let vegetables=document.getElementById("vegList")
 let newVeg=document.createElement("li")
 newVeg.innerHTML="Cabbages"
 vegetables.appendChild(newVeg)
+function styling(item){
+    item.style.width="40%"
+    item.style.textAlign="left"
+    item.style.margin="0 0 0 35%"
+    // item.style.backgroundColor="#D7BADB"
+}
+
+let listItem=document.querySelectorAll("li")
+listItem.forEach(item=>
+    styling(item)
+    // item.style.width="40%"
+    // item.style.textAlign="left"
+    )
 
 let image=document.createElement("img")
 image.src="crop.png"
@@ -32,6 +45,7 @@ image.style.left="0"
 image.style.opacity="0.7"
 body.style.padding="5% 0 0 0"
 body.style.fontSize="20px"
+body.style.textAlign="center"
 // body.style.backgroundImage='crop.png'
 
 let container=document.querySelector("article")
